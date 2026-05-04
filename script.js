@@ -65,6 +65,7 @@ const checkPin = () => {
     console.log(userPin);
 
     if (userPin == correctPin) {
+        window.location.href = "opt.html";
         rightPas.classList.remove('hide');
         rightPas.classList.add('show');
         // rightPas.className = "show";

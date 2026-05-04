@@ -59,19 +59,6 @@
         </div>
     </main>
 
-    <main id="atm-options" class="d-none">
-        <button id="Withdraw" onclick="WithdrawPage()">
-            Withdraw
-        </button>
-
-        <button id="Deposit" onclick="DepositPage()">
-            Deposit
-        </button>
-
-        <button id="Check-Bal" onclick="CheckBal()">
-            Check Balance
-        </button>
-    </main>
     <main id="ShowWithdraw" class="d-none">
         <!-- <div class="modal fade" id="exampleModalToggle" aria-hidden="false" aria-labelledby="exampleModalToggleLabel"
             tabindex="-1">
@@ -185,7 +172,7 @@
         </div>
     </div>
 
-    <div class="position-fixed top-10 left-60 p-3" style="z-index: 11">
+    <!-- <div class="position-fixed top-10 left-60 p-3" style="z-index: 11">
         <div id="fail" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
                 <img src="..." class="rounded me-2" alt="...">
@@ -196,6 +183,23 @@
             <div class="toast-body">
 
                 Incorrect Password Please Try again.
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- ✅ Login Successful -->
+                    🚫 Invalid Password
+                </div>
             </div>
         </div>
     </div>
