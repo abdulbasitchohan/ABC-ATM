@@ -65,12 +65,11 @@ const checkPin = () => {
     console.log(userPin);
 
     if (userPin == correctPin) {
-        window.location.href = "opt.html";
+        // window.location.assign('opt.html');
+        window.location.replace('opt.html')
         rightPas.classList.remove('hide');
         rightPas.classList.add('show');
         // rightPas.className = "show";
-        LoginPage.className = "d-none";
-        atmOptions.classList.remove('d-none');
 
     } else {
         // wrongPas.classList.add('hide');
@@ -83,9 +82,13 @@ const checkPin = () => {
 // console.log(inpBox.textContent);
 
 let CheckBal = () => {
-    atmOptions.classList.add('d-none');
-    showBal.classList.remove('d-none')
+    window.location.replace('./Balance.html')
+    // alert('heloo')
+    // atmOptions.classList.add('d-none');
+    // showBal.classList.remove('d-none')
     Balance.textContent = Amount;
+    console.log(Balance);
+
 }
 
 

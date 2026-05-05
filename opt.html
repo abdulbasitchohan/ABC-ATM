@@ -6,32 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>options</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-    <main id="atm-options" class="d-none">
+    <main id="atm-options">
         <!-- Cards  -->
         <!-- From Uiverse.io by kamehame-ha -->
         <div class="opt-cards">
-            <button id="Withdraw" class="card red" onclick="WithdrawPage()">
-                <p class="tip">Withdraw</p>
-                <p class="second-text">Lorem Ipsum</p>
-            </button>
-            <button id="Deposit" class="card blue" onclick="DepositPage()">
-                <p class="tip">Deposit</p>
-                <p class="second-text">Lorem Ipsum</p>
-            </button>
-            <button id="Check-Bal" class="card green" onclick="CheckBal()">
-                <p class="tip">Check Balance</p>
-                <p class="second-text">Lorem Ipsum</p>
-            </button>
+            
+            <a href="./Withdraw.html">
+                <button id="Withdraw" class="card red" onclick="WithdrawPage()">
+                    <p class="tip">Withdraw</p>
+                    <p class="second-text">Lorem Ipsum</p>
+                </button>
+            </a>
+            <a href="./Deposit.html">
+
+                <button id="Deposit" class="card blue" onclick="DepositPage()">
+                    <p class="tip">Deposit</p>
+                    <p class="second-text">Lorem Ipsum</p>
+                </button>
+            </a>
+            <a href="./Balance.html">
+
+                <button id="Check-Bal" class="card green" onclick="CheckBal()">
+                    <p class="tip">Check Balance</p>
+                    <p class="second-text">Lorem Ipsum</p>
+                </button>
+            </a>
         </div>
 
         <!-- <button id="Withdraw" onclick="WithdrawPage()">
             Withdraw
-        </button> -->
-
-        <!-- <button id="Deposit" onclick="DepositPage()">
+        </button>
+         <button id="Deposit" onclick="DepositPage()">
             Deposit
         </button>
 
